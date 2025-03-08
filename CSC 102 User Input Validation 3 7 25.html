@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--Sarah Goodwin 3 7 25-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src= "CSC 102 User Input Validation 3 7 25.js"></script>
+    <!--This is the javascript source that makes this html page work-->
+    
+    <title>"The Nutwork"; </title>
+    <link href="Main User Input Validation.css" rel="stylesheet">
+</head>
+<body>
+    <h1>The Secret Squirrel Society</h1>
+
+    <h3>This is a high-security squirrel operation. One wrong move, and we release the attack pigeons.</h3>
+
+    <h5>Unauthorized chipmunks will be ejected. We don't negotiate with nut thieves!</h5>
+
+    <form id= "login" onsubmit = "return false"> <!--ensures form does not submit, if all credentials 
+        are not met -->
+
+        Code Name: <input type = "text" id = "fName"/>
+        <br>
+        <br>
+        Squirrel Lineage: <input type = "text" id = "lName"/>
+        <br>
+        <br>
+        Burrow Coordinates: <input type = "number" id = "zipcode"/>
+        <br>
+        <br>
+        <input type = "submit" onclick = "checkCreds();"> <!--If the full name is >20 characters or the 
+        zipcode does not contain 5 digits it will not allow user to continue-->
+
+    </form>
+
+    <p id = "loginStatus">Status of Login</p> <!--This bar will let the user if there are any issues or 
+    if they can see the secret message-->
+    
+</body>
+<footer>Copyright 2025 SG</footer>
+</html>
